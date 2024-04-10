@@ -1,0 +1,375 @@
+#offcanvasNavbar > div.offcanvas-body > ul > li > a {
+  color: white;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+}
+
+.offcanvas-end.show .navbar-nav a.nav-link {
+  color: black !important;
+}
+
+#offcanvasNavbar > div.offcanvas-body > ul > li:nth-child(1) > a {
+  display: none;
+}
+
+.offcanvas-end.show > div.offcanvas-body > ul > li:nth-child(1) > a {
+  display: block !important;
+}
+
+.btn-close {
+  opacity: 1;
+  font-size: 20px;
+  --bs-btn-close-focus-shadow: none;
+}
+
+#root > div > nav > div {
+  padding: 10px 70px 10px 70px;
+}
+
+/* Navbar toggler */
+
+.navbar-toggler {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  position: relative;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: black;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+  position: absolute;
+  top: 0px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  position: absolute;
+  top: 20px;
+  transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+  top: inherit;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  top: inherit;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  top: inherit;
+  transform: rotate(-135deg);
+}
+
+/* Color of 3 lines */
+
+.navbar-toggler.collapsed .toggler-icon {
+  background: white;
+}
+
+.background-container {
+  background-image: url(/bg-img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 700px;
+}
+
+.intro-container {
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(256.73deg, #1cbddd 27.86%, #4dca79 100%);
+  top: 354px;
+  left: 80px;
+  padding: 24px 40px 32px 40px;
+  gap: 20px;
+  color: white;
+}
+
+.intro-text {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  background: #f28d35;
+  color: white;
+  text-transform: uppercase;
+  padding: 12px 20px 12px 20px;
+  gap: 8px;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  color: #f28d35;
+  background-color: transparent;
+  border-color: #f28d35;
+}
+
+#root > div > div.container-fluid.background-container > div > button:hover {
+  color: white;
+  border-color: white;
+}
+
+.service {
+  gap: 20px;
+}
+
+.title {
+  font-family: Poppins;
+  color: #6b3cc9;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+.service-body {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+}
+
+.accordion-button::after {
+  background-size: 22px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/%3E%3C/svg%3E");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-size: 22px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
+}
+
+.faq-container {
+  gap: 28px;
+  padding: 0 100px 0 100px;
+}
+
+.accordion-item {
+  color: #6b3cc9;
+  background-color: #faf8ff;
+  border: none;
+  margin-bottom: 15px;
+  padding: 24px;
+  border-radius: 7px;
+}
+
+.accordion-button {
+  background-color: #faf8ff;
+  color: #000000;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  margin-bottom: 13px;
+  color: #6b3cc9;
+  box-shadow: none;
+  background-color: #faf8ff;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 0;
+  color: #6f6c90;
+}
+
+#root > div > footer > div > section:nth-child(1) > div > div > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+}
+
+#root > div > footer > div > section:nth-child(1) > div > div:nth-child(2) > p,
+#root > div > footer > div > section:nth-child(1) > div > div:nth-child(3) > p {
+  margin-bottom: 12px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+}
+
+#root > div > footer > div > section.mb-4 > div {
+  text-align: left;
+}
+
+#root > div > footer h6 {
+  font-family: Inter;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 25.41px;
+  margin-bottom: 12px;
+}
+
+hr {
+  width: 70%;
+  border: 1px solid #ffffff;
+  margin: auto;
+  opacity: 0.5;
+}
+
+#root > div > footer > div > section.p-3.pt-0 > div > div {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+}
+
+#root > div > footer > div > section.p-3.pt-0 > div > div > a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 425px) {
+  .background-container {
+    height: 500px;
+  }
+
+  .intro-container {
+    top: 155px;
+  }
+
+  .intro-text {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  hr {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .service-body,
+  .title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #root > div > nav > div {
+    padding: 10px 30px 10px 30px;
+  }
+
+  .background-container {
+    background-size: contain;
+    background-position: top;
+  }
+
+  .intro-container {
+    display: block;
+    left: 0;
+  }
+
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .faq-container {
+    gap: 28px;
+    padding: 0 15px 0 15px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 575px) {
+  .background-container {
+    height: 615px;
+  }
+
+  .intro-container {
+    top: 205px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 768px) {
+  .background-container {
+    height: 690px;
+  }
+
+  .intro-container {
+    top: 280px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #root > div > div:nth-child(3) > img,
+  #root > div > div:nth-child(4) > img {
+    width: 275px;
+    height: 275px;
+  }
+}
+
+
+
+
+
